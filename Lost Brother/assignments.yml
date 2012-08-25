@@ -1,0 +1,11 @@
+Denizens:
+  'Guard':
+    Interact Scripts:
+    - 0 Lost Brother - Start
+    - 10 Lost Brother - Finish
+  'Brother':
+    Interact Scripts:
+    - 0 Lost Brother - Cave
+    - 10 Lost Brother - Supplies
+    - 20 Lost Brother - SupplyCheckFail
+    - 30 Lost Brother - SupplyCheck

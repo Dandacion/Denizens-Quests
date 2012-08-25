@@ -1,0 +1,15 @@
+Lost Brother - SupplyCheck
+'Lost Brother - Cave':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Lost Brother - Supplies'
+    - -FINISHED 'Lost Brother - SupplyCheck'
+    - -ITEM 280 2
+    - -ITEM 339 1
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "You don't have the supplies yes please hurry!"

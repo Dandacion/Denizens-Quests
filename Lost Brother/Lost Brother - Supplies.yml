@@ -1,0 +1,28 @@
+'Lost Brother - Supplies':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Lost Brother - Cave'
+    - -FINISHED 'Lost Brother - Supplies'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "You... you killed them!"
+        - LOOK AT
+        - WAIT 3
+        - CHAT "My leg is broken, I need you to gather some materials to splint my leg"
+        - CHAT "I need you to get me a couple sticks and bandages."
+        - CHAT "Can you get these for me?"
+      Chat Trigger:
+        '1':
+          Trigger: /Yes/
+          Script:
+          - CHAT "Hurry back with the supplies before more come back!"
+          - FINISH
+        '2':
+          Trigger: /No/
+          Script:
+          - CHAT "Ok thanks for you time, I'll find another adventurer to help me out."
+          FAIL

@@ -1,0 +1,34 @@
+'Lost Brother - Start':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Lost Brother - Start'
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "Hey <PLAYER>, Come over here I need to talk to you quick."
+      Click Trigger:
+        Script:
+        - CHAT "I need some help, my Brother left town in search for some rumored treasure."
+        - WAIT 1
+        - CHAT "This rumor is a joke I tried to stop him but he wouldn't listen."
+        - WAIT 1
+        - CHAT "He left 5 days ago, he should have returned already."
+        - WAIT 1
+        - CHAT "I need you to go and find him. The treasure is supposedly inside a cave in the eastern Jungle.
+        - WAIT 1
+        - CHAT "If you can find him I'll reward you handsomly."
+        - CHAT "Can you do this for me?"
+      Chat Trigger:
+        '1':
+          Trigger: /Yes/
+          Script:
+          - CHAT "Thanks, I owe you one!"
+          FINISH
+        '2':
+          Trigger: /No/
+          Script:
+          - CHAT "Ok thanks for you time, I'll find another adventurer to help me out."
+          FAIL

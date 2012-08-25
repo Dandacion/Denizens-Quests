@@ -1,0 +1,22 @@
+Lost Brother - SupplyCheck
+'Lost Brother - Cave':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Lost Brother - Supplies'
+    - -FINISHED 'Lost Brother - SupplyCheck'
+    - ITEM 280 2
+    - ITEM 339 1
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ENGAGE
+        - TAKE 280 2
+        - TAKE 339 1
+        - CHAT "Thanks for helping me out here"
+        - CHAT "Go tell me brother that I will be returning shortly"
+        - CHAT "Thank you once again, I owe you my life!"
+        - FINISH
+        - DISENGAGE

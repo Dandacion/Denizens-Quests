@@ -1,0 +1,20 @@
+'Lost Brother - Cave':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Lost Brother - Start'
+    - -FINISHED 'Lost Brother - Cave'
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - LOOK AT
+        - CHAT "No!"
+        - CHAT "Get away!"
+        - CHAT "They're everywhere!"
+        - WAIT 1
+        - LOOK AWAY
+        - CHAT "QUICK BEHIND YOU!"
+        - EXECUTE ASNPC 'spawnmob creeper 3'
+        - FINISH

@@ -1,0 +1,16 @@
+Lost Brother - Finish
+'Lost Brother - Cave':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Lost Brother - SupplyCheck'
+    - -FINISHED 'Lost Brother - Finish'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Thank you for saving my brother."
+        - CHAT "If you ever need a favour in the future just let me know."
+        - GIVE MONEY QTY: 20
+        - GIVE HEROESEXP QTY: 150
